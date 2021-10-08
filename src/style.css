@@ -1,0 +1,223 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.app{
+    margin: 0 auto;
+    width: 40%;
+    margin-top: 30px;
+}
+.search{
+    position: relative;
+}
+.app input{
+    width:100% !important;
+    height: auto;
+    border:0;
+    outline: 0;
+    appearance: none;
+    font-size: 16px;
+}
+#search_div{
+    width:100% ;
+    height: 35px;
+    background:rgb(255, 255, 255);
+    border:2px solid rgb(46, 45, 45);
+    border-radius: 2px;
+}
+.drop-down{
+    display: flex;
+    flex-direction: column;
+    display:none;
+}
+.openDrop{
+    display:flex;
+    flex-direction: column;
+    box-shadow: 3px 4px 8px 0px #504949;
+    position: absolute;
+    width: 40%;
+}
+.closeDrop{
+    display:none;
+}
+.delete{
+    position: absolute;
+    z-index: 5;
+    top:50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 50%;
+    right:20px;
+    transform:translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(224, 222, 222);
+}
+.delete:hover{
+    background-color: rgb(95, 93, 93);
+    transition: 0.2s ease-out;
+    color:white;
+}
+.non_delete{
+    display:none;
+}
+.down{
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    transform:rotate(90deg) translate(-50%, -50%);
+    user-select: none;
+    font-weight: 600;
+    border-radius: 50%;
+    background-color: lightgrey;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+}
+.up{
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    transform:rotate(-90deg) translate(50%, 50%);
+    user-select: none;
+    font-weight: 600;
+    border-radius: 50%;
+    background-color: lightgrey;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+}
+.up span{
+    width: 15px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.down span{
+    width: 15px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.option{
+    padding:10px 0;
+    background-color: rgb(160, 158, 158);
+    cursor:pointer;
+    padding-left: 10px;
+    border-bottom: 1.2px solid rgb(29, 27, 27);
+}
+.allSearch{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 4px solid #975656;
+}
+.searchOption{
+    padding:5px 0;
+    background-color: rgb(212, 156, 156);
+    cursor:pointer;
+    padding-left: 10px;
+    border-bottom: 1.2px solid rgb(29, 27, 27);
+    font-size: 13px;
+    font-style: italic ;
+}
+.allOption{
+    height: 30px;
+    position: absolute;
+    top: 9%;
+    margin-left: 3px;
+    display:flex;
+    width:90%;
+    overflow: hidden;
+}
+.selectOption{
+    background:rgb(199, 198, 198);
+    display:flex;
+    margin-left: 7px;
+    border-radius: 10px;
+    padding:0 5px;
+    align-items: center;
+}
+.closeSelectOption{
+    margin-left: 5px;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: aliceblue;
+    border-radius: 50%;
+}
+.class_Serbia{
+    width: 90%;
+    height:100px;
+    margin: 0 auto;
+    display:flex;
+    align-items: center;
+    padding-left: 15px;
+    background-color: rgb(45, 90, 175);
+    color:white;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-size: 20px;
+    border-radius: 20px;
+}
+.class_Alaska{
+    width: 90%;
+    height:100px;
+    margin: 0 auto;
+    display:flex;
+    align-items: center;
+    padding-left: 15px;
+    background-color: rgb(45, 127, 175);
+    color:white;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-size: 20px;
+    border-radius: 20px;
+}
+.class_Alabama{
+    width: 90%;
+    height:100px;
+    margin: 0 auto;
+    display:flex;
+    align-items: center;
+    padding-left: 15px;
+    background-color: rgb(243, 200, 11);
+    color:white;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+@media screen and (max-width:800px){
+    .app{
+        width: 90%;
+    }
+    .openDrop{
+        width: 90%;
+    }
+}
